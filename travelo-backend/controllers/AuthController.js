@@ -31,6 +31,7 @@ const signup = async (req, res) => {
 
 const login = async (req, res) => {
     try {
+        console.log(req.body);
         const { number, password } = req.body;
         const user = await UserModel.findOne({ number });
         const errorMsg = 'Auth failed number or password is wrong';
