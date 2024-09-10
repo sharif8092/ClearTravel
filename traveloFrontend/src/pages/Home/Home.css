@@ -1,0 +1,19 @@
+.main {
+  padding: 11rem 2rem 2rem 2rem;
+}
+
+.gap-larger {
+  gap: 3rem;
+}
+
+.alert-text {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
+}
