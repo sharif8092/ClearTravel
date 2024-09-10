@@ -138,7 +138,7 @@ const login = async (req, res) => {
         }
 
         // Generate JWT token
-        const jwtToken = jwt.sign(
+        const accessToken = jwt.sign(
             { number: user.number, _id: user._id },
             process.env.PASSWORD_SECRET_KEY,  // Ensure you are using the correct key
             { expiresIn: '24h' }
@@ -147,7 +147,7 @@ const login = async (req, res) => {
         res.status(200).json({
             message: "Login Success",
             success: true,
-            jwtToken,
+            accessToken,
             email: user.email,
             username: user.username
         });

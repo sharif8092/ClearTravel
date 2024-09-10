@@ -13,44 +13,47 @@ let isNumberValid,
   isNameValid,
   isEmailValid,
   isPasswordValid
+  // isConfirmPasswordValid
 
 
 export const AuthSignup = () => {
-  const { username, email, password, number, authDispatch } =
-    useAuth();
+  const { username, email, password, number, authDispatch} = useAuth();
   
   const { setAlert } = useAlert();
+
+  console.log("alert",alert);
+  
 
   const handleNumberChange = (event) => {
     isNumberValid = validateNumber(event.target.value);
     if (isNumberValid) {
-      console.log("Valid Input");
+      console.log("Valid Number");
       authDispatch({
         type: "NUMBER",
         payload: event.target.value,
       });
     } else {
-      console.log("Invalid Number");
+      console.log("Invalid Number must be 10 digit");
     }
   };
 
   const handleNameChange = (event) => {
     isNameValid = validateName(event.target.value);
     if (isNameValid) {
-      console.log("Valid Input");
+      console.log("Valid Name");
       authDispatch({
         type: "NAME",
         payload: event.target.value,
       });
     } else {
-      console.log("Invalid Name");
+      console.log("Invalid Name use oly alphabet ");
     }
   };
 
   const handleEmailChange = (event) => {
     isEmailValid = validateEmail(event.target.value);
     if (isEmailValid) {
-      console.log("Valid Input");
+      console.log("Valid Input Email");
       authDispatch({
         type: "EMAIL",
         payload: event.target.value,
@@ -61,15 +64,17 @@ export const AuthSignup = () => {
   };
 
   const handlePasswordChange = (event) => {
+    console.log("handle password change :" ,event);
+    
     isPasswordValid = validatePassword(event.target.value);
     if (isPasswordValid) {
-      console.log("Valid Input");
+      console.log("Valid Input Password");
       authDispatch({
         type: "PASSWORD",
         payload: event.target.value,
       });
     } else {
-      console.log("Invalid Password");
+      console.log("Invalid Password use One Capital letter one Numeric , one Special character and lowercase");
     }
   };
 
@@ -82,7 +87,7 @@ export const AuthSignup = () => {
   //       payload: event.target.value,
   //     });
   //   } else {
-  //     console.log("Invalid Password");
+  //     console.log("Invalid Password passwod not match");
   //   }
   // };
 

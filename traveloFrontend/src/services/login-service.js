@@ -11,13 +11,13 @@ export const loginHandler = async (number, password, setAlert) => {
         password: password,
       }
     );
-    console.log("Logged IN");
-    console.log({ accessToken, username });
+    // console.log("Logged IN");
+    console.log("after Login",{  accessToken, username });
     localStorage.setItem("token", accessToken);
     localStorage.setItem("username", username);
     setAlert({
       open: true,
-      message: "Login Successful!",
+      message: `Login Successful! ${username} `,
       type: "success"
     })
     return { accessToken, username };
