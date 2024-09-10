@@ -1,4 +1,5 @@
 export const validatePassword = (password) => {
-  const regex = /^(?=.*\d)(?=.*[@#$*!&%])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+  const regex = /^.{4}$/ ;
+
   return regex.test(password);
 };

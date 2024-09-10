@@ -12,11 +12,11 @@ import { signupHandler } from "../../services";
 let isNumberValid,
   isNameValid,
   isEmailValid,
-  isPasswordValid,
-  isConfirmPasswordValid;
+  isPasswordValid
+
 
 export const AuthSignup = () => {
-  const { username, email, password, number, confirmPassword, authDispatch } =
+  const { username, email, password, number, authDispatch } =
     useAuth();
   
   const { setAlert } = useAlert();
@@ -89,10 +89,10 @@ export const AuthSignup = () => {
   const handleFormSubmit = (event) => {
     event.preventDefault();
     if (
-      isNumberValid 
-      // isNameValid &&
-      // isEmailValid &&
-      // isPasswordValid &&
+      isNumberValid &&
+      isNameValid &&
+      isEmailValid &&
+      isPasswordValid 
       // isConfirmPasswordValid
     ) {
       signupHandler(username, number, email, password, setAlert);
@@ -114,7 +114,7 @@ export const AuthSignup = () => {
             type="number"
             className="auth-input"
             maxLength="10"
-            placeholder="Enter Mobile Number"
+            placeholder="Enter Mobile Number (10 digit)"
             required
             onChange={handleNumberChange}
           />
@@ -126,7 +126,7 @@ export const AuthSignup = () => {
           <input
             defaultValue={username}
             className="auth-input"
-            placeholder="Enter Name"
+            placeholder="Enter Name "
             required
             onChange={handleNameChange}
           />

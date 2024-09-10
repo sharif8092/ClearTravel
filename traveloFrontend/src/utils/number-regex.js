@@ -1,4 +1,5 @@
 export const validateNumber = (number) => {
-  const regex = /^[6-9]\d{9}$/;
+  const regex = /^\d{10}$/;
+
   return regex.test(number);
 };

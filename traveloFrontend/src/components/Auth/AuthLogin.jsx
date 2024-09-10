@@ -90,7 +90,7 @@ export const AuthLogin = () => {
             defaultValue={number}
             type="number"
             className="auth-input"
-            maxLength="10"
+            maxLength="12"
             placeholder="Enter Mobile Number"
             required
             onChange={handleNumberChange}
