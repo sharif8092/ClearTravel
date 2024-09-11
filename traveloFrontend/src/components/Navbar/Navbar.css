@@ -1,22 +1,46 @@
 .heading {
   background-color: var(--background-color);
-  padding: 8px 3rem;
+  padding: 20px;
   border-bottom: 1px solid var(--accent-color);
   justify-content: space-between;
   position: fixed;
   z-index: 2;
   width: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  flex-direction: column;
+  /* gap: 2.8vh; */
 }
+
 
 .heading-1 {
   font-size: 1.75rem;
   color: var(--primary-color);
+  /* padding: 4vh; */
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  /* gap: 60vw; */
+  margin-top: 2vw;
+
+}
+.logo{
+  font-size: 1.75rem;
+  color: var(--primary-color);
   padding: 0;
+  order:-1;
+  width: 10p;
+  margin-left: 4vh;
+  
+
 }
 
 .nav {
   border: 1px solid var(--container-border-color);
   border-radius: 4px;
+  margin-right: 5vw;
+  
 }
 
 .nav:hover {
@@ -27,12 +51,18 @@
   background-color: #fff;
   height: 2.75rem;
   border-radius: 4px;
+  position: relative;
+  bottom: 6vh;
+  width: 40vw;
+
 }
 
 .form-option {
   font-size: 0.875rem;
   padding: 8px;
   color: var(--text-color-primary);
+  width: 40vw;
+
 }
 
 .border-right-1px {
@@ -46,11 +76,13 @@
   padding: 8px;
   font-size: 1.875rem;
   border-radius: 0 4px 4px 0;
+  
 }
 
 .profile-option {
   color: var(--text-color-primary);
   font-size: 2.5rem;
+  order:2
 }
 
 .menu {
@@ -64,4 +96,76 @@
 
 .cursor-pointer:hover {
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .heading {
+    background-color: var(--background-color);
+    padding: 8px 3rem;
+    border-bottom: 1px solid var(--accent-color);
+    /* justify-content: space-between; */
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.8vh;
+  }
+  .heading-1 {
+    font-size: 1rem;
+    color: var(--primary-color);
+    padding: 1.5vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 35vw;
+    margin-top: 1vh;
+  }
+  .logo{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    padding: 0;
+    position: relative;
+    
+    
+  }
+  .form-container {
+    background-color: #fff;
+    height: 2.75rem;
+    border-radius: 4px;
+    position: relative;
+    bottom: 0vh;
+    width: 83vw;
+    
+
+ 
+  
+  }
+  .form-option {
+    font-size: 0.875rem;
+    padding: 8px;
+    color: var(--text-color-primary);
+    
+    
+  }
+  nav{
+    /* margin-top: 4vw; */
+    /* margin-right: 8vw; */
+  }
+  .border-right-1px {
+    border-right: 1px solid var(--accent-color);
+    height: 70%;
+  
+  }
+  .search {
+    background-color: var(--primary-color);
+    height: 100%;
+    padding: 8px;
+    font-size: 1.875rem;
+    border-radius: 0 4px 4px 0;
+   
+  }
+  
+
+
 }

@@ -1,6 +1,14 @@
 .main {
   padding: 11rem 2rem 2rem 2rem;
 }
+.head{
+  display: flex;
+  flex-direction: column;
+}
+.drop-down{
+  display: flex;
+  flex-direction: column;
+}
 
 .gap-larger {
   gap: 3rem;
@@ -16,4 +24,13 @@
   display: inline-block;
   font-size: 16px;
   
+}
+
+.black-background-div {
+  position: relative;
+  top: 50vh;
+  width: 60%;
+  background-color: black;
+  color: white; /* Optional: to make the text inside readable */
+  padding: 20px; /* Optional: add some padding */
 }

@@ -3,19 +3,49 @@
 }
 
 .primary-image-container {
+  width:100%;
   height: 25rem;
+  
+}
+
+.all-image{
+  display: flex;
+  flex-wrap: wrap;
+  width:20vw;
+  overflow-wrap: break-word;
 }
 
 .hotel-img {
-  width: 20vw;
+  /* width: 20vw; */
   height: 50%;
 }
 
 .primary-img {
-  width: 40vw;
-  height: 100%;
+  width: 100%;
+  /* height: 100%; */
 }
 
 .gap-small {
   gap: 8px;
+}
+
+
+@media screen and (max-width: 900px) {
+  .hotel-image-container {
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .primary-image {
+    width: 100vw;
+    /* height: 100%; */
+  }
+ .small-image{
+  display: none;
+  flex-wrap: wrap;
+ }
+ .hotel-img {
+  visibility: hidden;
+  /* height: 50%; */
+}
 }

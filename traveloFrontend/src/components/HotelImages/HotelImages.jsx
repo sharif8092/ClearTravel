@@ -9,9 +9,10 @@ export const HotelImages = ({ singleHotel }) => {
       <div className="primary-image-container">
         <img className="primary-img" src={image} alt="hotel" />
       </div>
-      <div className="d-flex wrap gap-small">
+      <div className="d-flex wrap gap-small small-image">
         {imageArr &&
           imageArr.map((image) => (
+            
             <img
               key={image}
               className="hotel-img"

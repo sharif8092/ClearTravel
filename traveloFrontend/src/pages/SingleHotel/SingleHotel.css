@@ -6,3 +6,11 @@
   font-size: 1.5rem;
   padding-bottom: 8px;
 }
+
+@media screen and (max-width: 600px) {
+.final-check{
+  display: flex;
+  flex-direction: column;
+}
+
+}
