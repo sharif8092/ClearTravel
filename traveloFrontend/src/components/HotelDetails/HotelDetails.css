@@ -2,9 +2,14 @@
   gap: 8px;
 }
 
+.hotel-details-container{
+  width: 50vw;
+}
+
 .host-details .p {
   color: var(--text-color-primary);
   font-size: 1rem;
+  display: inline;
 }
 
 .span {
@@ -31,7 +36,8 @@
 
 .host-details {
   padding: 1.5rem 0;
-  border-bottom: 1px solid var(--container-border-color);
+  /* border-bottom: 1px solid var(--container-border-color); */
+  width: 50%;
 }
 
 .hotel-room-details {
@@ -48,4 +54,21 @@
 
 .amenities-container .span {
   padding: 0.5rem 0;
+}
+
+
+@media screen and (max-width: 600px) {
+  .host-details {
+    padding: 1.5rem 0;
+    /* border-bottom: 1px solid var(--container-border-color); */
+    width: 100%;
+  }
+
+  .hotel-details-container{
+    width: 89vw;
+    padding-left: 5vw;
+  }
+
+
+
 }

@@ -36,3 +36,19 @@
 .span-md {
     font-size: 1.25rem;
 }
+
+@media screen and (max-width: 600px) {
+
+    .os-container{
+        width: 100vw;
+    padding: 1rem;
+    margin-right: 10vw;
+    justify-content: center;
+    align-items: baseline;
+    align-self: center;
+    justify-self: center;
+    color: var(--text-color-primary);
+    }
+
+
+}

@@ -25,7 +25,7 @@ export const AuthModal = () => {
 
   return (
     <div className="auth-modal-container fixed">
-      <div className="auth-modal absolute shadow right-0">
+      <div className="auth-modal absolute shadow right-0 authcontainer ">
         <div className="d-flex align-center shadow">
           <button
             className={`button btn-auth grow-shrink-basis cursor-pointer ${

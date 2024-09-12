@@ -2,9 +2,11 @@
   align-self: flex-start;
   background-color: var(--background-color);
   padding: 1.5rem;
-  width: 25rem;
+  width: 55vw;
   margin-left: auto;
   margin-top: 2rem;
+  justify-content: center;
+  
 }
 
 .guests {
@@ -44,4 +46,28 @@
 
 .guest-count-input:focus {
   outline: none;
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .authcontainer{
+     position: absolute;
+     width: 88vw;
+     height: 80vh;
+     left: 6vw;
+    justify-content: center;
+  }
+
+  .price-details-container{
+  width: 95vw;
+    
+  }
+
+.checkout{
+  padding: relative;
+  margin-left: -25vw;
+}  
+
+
 }

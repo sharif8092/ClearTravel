@@ -2,3 +2,15 @@
   font-size: 0.875rem;
   padding: 0.5rem;
 }
+
+
+@media screen and (max-width: 600px) {
+
+  .search-dest {
+    font-size: 0.1rem;
+    padding: 2rem;
+   
+  }
+ 
+
+}

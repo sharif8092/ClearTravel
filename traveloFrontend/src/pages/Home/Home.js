@@ -160,7 +160,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import {
   Navbar,
   HotelCard,
-  Categories,
+  // Categories,
   SearchStayWithDate,
   Filter,
   AuthModal,
@@ -274,7 +274,7 @@ export const Home = () => {
     <div className="relative">
       <div className="head">
       <Navbar route="home"/>
-      <Categories />
+      {/* <Categories /> */}
       </div>
       {isLoading ? (
       <div className="black-background-div">

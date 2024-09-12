@@ -1,16 +1,208 @@
-.single-hotel-page {
-  padding: 7rem 8rem 2rem 9rem;
+/* .single-hotel-page {
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
-
+.relative{
+  
+}
 .hotel-name-add {
   font-size: 1.5rem;
-  padding-bottom: 8px;
+  margin-bottom: 8vh;
+  display: flex;
+  flex-direction: column;
+  height:60vh;
+  gap:3vh
+  
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 .final-check{
   display: flex;
   flex-direction: column;
 }
+.hotel-name-add {
+  font-size: 1.5rem;
+  margin-bottom: 8vh;
+  display: flex;
+  flex-direction: column;
+  height:38vh;
+  
+}
+.single-hotel-page {
+
+ 
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.singlehotelpage-nav{
+  
+}
+
+} */
+
+
+
+.relative{
+  display: flex;
+  flex-direction: column;
+}
+.html{
+  margin: 0px;
+  padding: 0px;
+}
+.hotelName{
+  font-size: 2vw;
+  padding: 1vw;
+  margin-bottom: 2vw;
+}
+.hotelImage{
+  display: flex;
+}
+.sidebar1 {
+grid-area: sidebar;
+display: flex;
+/* flex-direction: column; */
+margin-top: 90vh;
+padding: 3vw;
+}
+
+.sidebar2 {
+grid-area: sidebar2;
+display: flex;
+flex-direction: column;
+}
+
+.content {
+grid-area: content;
+display: flex;
+flex-direction: column;
+margin-top: 20vh;
+height:15vh
+}
+
+.header {
+grid-area: header;
+position: fixed;
+margin: 0px;
+padding: 0px;
+display: flex;
+justify-content: flex-start;
+z-index: 2;
+/* height: 18vh; */
+
+.relative{
+position: fixed;
+}
+
+}
+
+.sidebar2{
+width: 10vw;
+}
+
+.wrapper {
+  display: grid;
+  /* grid-gap: 1em; */
+  grid-template-areas:
+   "header"
+   "content"
+   "sidebar1 sidebar2"
+   "sidebar1 sidebar2"
+   
+}
+
+
+
+
+
+@media only screen and (max-width: 800px)  {
+  .relative{
+    display: flex;
+    flex-direction: column;
+  }
+  .html{
+    margin: 0px;
+    padding: 0px;
+  }
+  .hotelName{
+    font-size: 6vw;
+    padding: 1vw;
+    margin-bottom: 2vw;
+  }
+  .hotelImage{
+    display: flex;
+    flex-direction: column;
+  }
+.sidebar1 {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  margin-top: 28vh ;
+}
+
+.sidebar2 {
+  grid-area: sidebar2;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  margin-top: 19vh;
+}
+
+.header {
+  grid-area: header;
+  position: fixed;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: flex-start;
+  z-index: 2;
+  /* height: 18vh; */
+  
+.relative{
+  position: fixed;
+}
+  
+}
+
+.sidebar2{
+  width: 10vw;
+}
+
+.wrapper {
+  display: grid;
+  /* grid-gap: 1em; */
+  grid-template-areas:
+   "header"
+   "content"
+   "sidebar1"
+   "sidebar2"
+}
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+  .authcontainer{
+     position: absolute;
+     width: 88vw;
+     height: 80vh;
+     left: 6vw;
+    justify-content: center;
+  }
+
+  
+
 
 }

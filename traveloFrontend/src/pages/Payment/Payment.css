@@ -69,3 +69,18 @@
 .price-detail-container .final-price .span {
   font-size: 1rem;
 }
+
+
+@media screen and (max-width: 600px) {
+  .payment-page {
+    display: flex;
+    flex-direction: column;
+  }
+  .heading{
+    width: 10vw;
+    font-size: 1vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+}

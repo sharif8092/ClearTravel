@@ -75,9 +75,9 @@ export const Payment = () => {
         navigate("/order-summary");
       },
       prefill: {
-        name: "Prakash Sakari",
-        email: "sakari@gmail.com",
-        contact: "9876543210",
+        name: "Sharif Kamran",
+        email: "sharifkamran8092@gmail.com",
+        contact: "7909096738",
       },
     };
 
@@ -89,7 +89,7 @@ export const Payment = () => {
     <Fragment>
       <header className="heading">
         <h1 className="heading-1">
-          <Link className="link" to="/">
+        <Link className="link" to="/">
             TravelO
           </Link>
         </h1>
@@ -118,16 +118,7 @@ export const Payment = () => {
               <span>{guests} Guests</span>
             </div>
           </div>
-          <div className="d-flex direction-column gap-sm">
-            <h3>Pay with</h3>
-            <div>Razorpay</div>
-          </div>
-          <button
-            className="button btn-primary btn-reserve cursor btn-pay"
-            onClick={handleConfirmBookingClick}
-          >
-            Confirm Booking
-          </button>
+         
         </div>
         <div className="final-details d-flex direction-column gap-large">
           <div className="d-flex gap-sm">
@@ -168,6 +159,16 @@ export const Payment = () => {
                 <span className="span">Total</span>
                 <span className="span">Rs. {totalPayableAmount}</span>
               </div>
+              <div className="d-flex direction-column gap-sm">
+            <h3>Pay with</h3>
+            <div>Razorpay</div>
+          </div>
+          <button
+            className="button btn-primary btn-reserve cursor btn-pay"
+            onClick={handleConfirmBookingClick}
+          >
+            Confirm Booking
+          </button>
             </div>
           </div>
         </div>

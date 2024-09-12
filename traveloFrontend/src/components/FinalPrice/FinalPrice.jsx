@@ -63,10 +63,10 @@ export const FinalPrice = ({ singleHotel }) => {
       <div className="d-flex direction-column">
         <div className="grid-container-two-col selected-dates">
           <div className="checkin loc-container">
-            <label className="label">Check in</label>
+            <label className="checkin">Check in</label>
             <DateSelector checkInType="in" />
           </div>
-          <div className="checkin loc-container">
+          <div className="checkout loc-container">
             <label className="label">Check Out</label>
             <DateSelector checkInType="out" />
           </div>

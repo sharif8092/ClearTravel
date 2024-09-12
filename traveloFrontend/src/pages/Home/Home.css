@@ -4,6 +4,7 @@
 .head{
   display: flex;
   flex-direction: column;
+
 }
 .drop-down{
   display: flex;
