@@ -21,7 +21,16 @@ export const loginHandler = async (number, password, setAlert) => {
       type: "success"
     })
     return { accessToken, username };
-  } catch (err) {
-    console.log("unable to login");
+  }  catch (err) {
+    console.log("Error adding user to database");
+
+    // If there's an error response from the backend, you can also show it in the alert
+    const errorMessage = err.response?.data?.message || "There was an error login your account. close window &Please try again.";
+
+    setAlert({
+      open: true,
+      message: errorMessage,
+      type: "error"
+    });
   }
 };

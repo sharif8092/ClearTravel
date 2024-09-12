@@ -9,6 +9,25 @@
   height: 15rem;
   object-fit: cover;
   border-radius: 4px;
+  display: block;
+  /* height: auto; */
+  transition: 0.3s;
+ 
+}
+/* .img:hover{
+  transform: scale(1.05);
+} */
+.hotelcard-container{
+  transition: 0.3s;
+   box-shadow: none;
+}
+
+
+.hotelcard-container:hover {
+  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.6); /* Glowing effect */
+  background-color:darkgray; /* Adjust the hover color as needed */
+  transform: scale(1.08);
+
 }
 
 .hotelcard-details {

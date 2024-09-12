@@ -21,7 +21,7 @@ export const AuthSignup = () => {
   
   const { setAlert } = useAlert();
 
-  console.log("alert",alert);
+  // console.log("alert",alert);
   
 
   const handleNumberChange = (event) => {
@@ -74,7 +74,7 @@ export const AuthSignup = () => {
         payload: event.target.value,
       });
     } else {
-      console.log("Invalid Password use One Capital letter one Numeric , one Special character and lowercase");
+      console.log("Invalid Password first close window agin fill form with unique number &use One Capital letter one Numeric , one Special character and lowercase");
     }
   };
 
@@ -102,9 +102,9 @@ export const AuthSignup = () => {
     ) {
       signupHandler(username, number, email, password, setAlert);
     }
-    authDispatch({
-      type: "CLEAR_USER_DATA",
-    });
+    // authDispatch({
+    //   type: "CLEAR_USER_DATA",
+    // });
   };
 
   return (

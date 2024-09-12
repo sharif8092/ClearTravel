@@ -295,7 +295,7 @@ export const Home = () => {
             <main className="main d-flex align-center wrap gap-larger">
               {filteredHotelsByCancelation &&
                 filteredHotelsByCancelation.map((hotel) => (
-                  <HotelCard key={hotel._id} hotel={hotel} />
+                  <HotelCard key={hotel._id} hotel={hotel}  />
                 ))}
             </main>
           </InfiniteScroll>
