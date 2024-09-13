@@ -18,7 +18,8 @@ export const loginHandler = async (number, password, setAlert) => {
     setAlert({
       open: true,
       message: `Login Successful! ${username} `,
-      type: "success"
+      type: "success",
+      isSignup:false
     })
     return { accessToken, username };
   }  catch (err) {
@@ -30,7 +31,9 @@ export const loginHandler = async (number, password, setAlert) => {
     setAlert({
       open: true,
       message: errorMessage,
-      type: "error"
+      type: "error",
+      isSignup:false
+
     });
   }
 };

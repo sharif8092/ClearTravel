@@ -45,7 +45,7 @@ export const signupHandler = async (username, number, email, password, setAlert)
     console.log(response);
 
     // Assuming the backend sends a message or some data in response.data
-    const backendMessage = response.data.message || `Account Created Successfully! Username: ${username}`;
+    const backendMessage =  `Account Created Successfully! Username: ${username}`|| response.data.message ;
 
     // Set alert with the backend response message
     setAlert({
@@ -62,7 +62,8 @@ export const signupHandler = async (username, number, email, password, setAlert)
     setAlert({
       open: true,
       message: errorMessage,
-      type: "error"
+      type: "error",
+      isSignup:true
     });
   }
 };

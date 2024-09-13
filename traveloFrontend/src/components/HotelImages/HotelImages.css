@@ -31,11 +31,11 @@
 }
 
 .primary-img {
-  width: 80%;
+  width: 70%;
   /* height: 100%; */
   overflow: hidden;
-  object-fit: cover;
-  margin-left: 2vw;
+  object-fit: contain;
+  margin-left: 5vw;
   transition: 0.3s;
   box-shadow: none;
 }
@@ -46,6 +46,18 @@
 
 .gap-small {
   gap: 8px;
+}
+.small-image{
+  width: 35vw;
+  flex-wrap: wrap;
+  height: 70vh;
+  object-fit: contain;
+  overflow:scroll;
+  scrollbar-width: 0px;
+  scroll-padding: 20px;
+  margin-right: 9vw;
+
+ 
 }
 
 

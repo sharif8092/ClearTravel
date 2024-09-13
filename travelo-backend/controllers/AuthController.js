@@ -92,7 +92,7 @@ const signup = async (req, res) => {
         const user = await UserModel.findOne({ number });
 
         if (user) {
-            return res.status(409).json({ message: 'User already exists, please log in', success: false });
+            return res.status(409).json({ message: 'User already exists, please log in', success: true });
         }
 
         // Hash the password
